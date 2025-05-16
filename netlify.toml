@@ -1,0 +1,7 @@
+[build]
+  command = "yarn netlify-build"
+  publish = "packages/clarity-js/build"
+
+[build.environment]
+  NODE_VERSION = "18.20.6"
+  YARN_VERSION = "1.22.19"

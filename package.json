@@ -13,6 +13,7 @@
   "scripts": {
     "version": "npx lerna version",
     "build": "npx lerna run build --stream",
+    "netlify-build": "yarn install && yarn build",
     "build:js": "yarn workspace clarity-js build",
     "build:decode": "yarn workspace clarity-decode build",
     "build:visualize": "yarn workspace clarity-visualize build",
@@ -20,6 +21,8 @@
     "test": "yarn workspace clarity-js test",
     "bump-version": "ts-node scripts/bump-version.ts"
   },
+  "engines": {
+    "node": ">=18.20.6"
   "devDependencies": {
     "lerna": "^6.4.1",
     "parse-url": "^8.1.0"
